@@ -1,5 +1,5 @@
 [project]
-name = "1610-facies-classification"
+name = "PoseidonML"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -13,4 +13,14 @@ dependencies = [
     "pip>=25.2",
     "scikit-learn>=1.7.1",
     "seaborn>=0.13.2",
+    "welly"
+]
+
+[tool.uv.sources]
+welly = { git = "https://github.com/agilescientific/welly", rev = "6ed78b5" }
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.0",
+    "pip>=25.2",
 ]
